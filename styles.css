@@ -10,12 +10,7 @@ body{
     font-family: Helvetica, sans-serif;
 }
 /* header */
-nav .logo-hamericas{
-    width: auto;
-    margin: 0 70px;
-    
 
-}
 
 nav {
     display: flex;
@@ -32,8 +27,8 @@ nav {
  nav a{
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14.4px;
+    font-weight: 700;
 }
 a {
     padding: 20px;
@@ -41,13 +36,20 @@ a {
 a:hover{
     color: #ffca00;
 }
+nav .logo-hamericas{
+    width: auto;
+    margin: 0 70px;
+    cursor: pointer;
+
+}
 .franchising{
+    margin-left: 330px;
     
     
 }
-.user-icon{
-    
-} 
+.user-icon:hover{
+    cursor: pointer;
+}
 
 /* Home Section */
 
@@ -58,6 +60,7 @@ a:hover{
 }
 .home-box{
     text-align:start;
+    align-content: center;
     margin: 50px;
     width: 50%;
 }
@@ -79,12 +82,19 @@ a:hover{
     text-decoration: none;
     font-weight: bold;
 }
+.btn-menu:hover{
+    
+    color: white;
+}
 .home-box-img img{
     width: 600px;
     height: 600px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-
+.home-box-img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 
 /* footer*/
 footer{
