@@ -14,8 +14,7 @@ body{
 
 nav {
     display: flex;
-    justify-content:flex-start;
-    gap: 20px;
+    justify-content:space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: black;
@@ -24,6 +23,17 @@ nav {
     border-radius: 2px;
     margin: 20px 20px;
     }
+.nav-box{
+    display: flex;
+    flex-grow: 1;
+
+    }
+
+.nav-box:last-child{
+    justify-content: flex-end;
+
+    }
+
  nav a{
     text-decoration: none;
     color: white;
@@ -36,16 +46,11 @@ a {
 a:hover{
     color: #ffca00;
 }
-nav .logo-hamericas{
+.logo-hamericas{
     width: auto;
-    margin: 0 70px;
     cursor: pointer;
+    
 
-}
-.franchising{
-    margin-left: 330px;
-    
-    
 }
 .user-icon:hover{
     cursor: pointer;
@@ -65,7 +70,7 @@ nav .logo-hamericas{
     width: 50%;
 }
 .home-box h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffca00;
@@ -105,9 +110,16 @@ footer{
     margin-top: 20px;
 }
 footer p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 14px;
     margin: 10px;
+    text-align: center;
 
+}
+footer a{
+    color: #ffca00;
 }
 
 /* Dove siamo.html*/
@@ -124,4 +136,46 @@ iframe{
     margin: 20px auto;
     border: 2px solid white;
     border-radius: 10px;
+}
+
+
+/* Galleria.html */
+.img-container{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px;
+}
+.img-container img{
+    width: 400px;
+    border-radius: 5px;
+    height: 400px;
+}
+.img-container img:hover{
+    transform: scale(1.1);
+    transition: 1.2;
+    cursor: pointer;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 600px) {
+    nav a{
+        display: none;
+    }
+    nav{
+        border: none;
+    }
+    .logo-hamericas{
+        justify-content:center ;
+
+    }
+    
+    .home-box-img img{
+        width: 500px;
+    }
+
 }
