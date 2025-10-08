@@ -127,6 +127,10 @@ footer p{
 footer a{
     color: #ffca00;
 }
+.footer-box:first-child{
+    border-bottom: 1px solid white;
+    
+}
 
 /* Dove siamo.html*/
 .dove-siamo-box{
@@ -154,9 +158,9 @@ iframe{
     margin: 40px;
 }
 .img-container img{
-    width: 300px;
+    width: 600px;
     border-radius: 5px;
-    height: 300px;
+    height: 400px;
 }
 .img-container img:hover{
     transform: scale(1.05);
