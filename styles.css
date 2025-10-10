@@ -124,8 +124,20 @@ footer p{
     text-align: center;
 
 }
-footer a{
+footer h3{
     color: #ffca00;
+
+}
+footer li{
+    list-style: none;
+    margin: 5px 0;
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    
 }
 .footer-box:first-child{
     border-bottom: 1px solid white;
