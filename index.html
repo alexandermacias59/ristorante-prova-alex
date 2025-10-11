@@ -54,21 +54,29 @@
         <img src="./assets/logo-footer.svg" alt="logo" class="logo-footer"> -->
         <div class="container-footer">
             <div class="footer-box">
-                <div>
-                    <h2>ISCRIVITI ALLA NOSTRA NEWSLETTER</h2>
+                <div class="newsletterclass">
+                    <h2>ISCRIVITI ALLA<br>NEWSLETTER</h2>
                     <p>Promo, piatti speciali e tutti gli eventi in anteprima</p>
                 </div>
-                <div>
+                <div class="iscrizione-newsletter">
                     <form>
-                        <input type="hidden" name="command" value="newsletter-handler">
+                        <div class="input-newsletter">
+                            <input type="email" name="email" value="INSERISCI LA TUA E-MAIL*" placeholder="Inserisci la tua mail">
+                            <input type="submit" class="btn-newsletter">
+
+                        </div>
                         <div>
-                            <input id="nlMail" name="email" class="form-control" type="email" placeholder="Inserisci la tua e-mail*" required="required">
-                            <input type="submit">
-                            <div>
-                                <p>Autorizzo al trattamento dei miei dati personali in ottemperanza all'<a href="#">informativa privacy</a></p>
-                            <div><input type="checkbox">con finalità di rispondere alle richieste inviate *</div>
-                            <div><input type="checkbox">con finalità indagini statistiche e ricerche di mercato</div>
-                            <div><input type="checkbox">con finalità di uso e attivazione di meccanismi di profilazione</div>
+                            <div class="custom-checkbox">
+                                <p>Autorizzo al trattamento dei miei dati personali in ottemperanza<a href="#">all'informativa privacy</a></p>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="d-none" required><label for="n1Privacy">con finalità di rispondere alle richieste inviate *</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="d-none" required><label for="n2Privacy">con finalità indagini statistiche e ricerche di mercato</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="d-none" required><label for="n3Privacy">con finalità di uso e attivazione di meccanismi di profilazione</label>
+                                </div>
 
                             </div>
                             
@@ -77,9 +85,12 @@
                 </div>
             </div>
 
-            <div class="footer-box">
+            <div class="footer-box1">
                 <div>
-                    <img src="./assets/logo-footer.svg" alt="logo" class="logo-footer">
+                    <div>
+                        <img src="./assets/logo-footer.svg" alt="logo" class="logo-footer">
+                    </div>
+                    
                     <div>
                         <ul>
                             <li>Hamerica's Foodelicious S.R.L.</li>
